@@ -60,9 +60,4 @@ function LogoutButton(props){
     return ( <button onClick={props.onClick}>logout</button>)
 }
 
-ReactDOM.render(
-    <Greeting isLoggedIn={false} />,
-    document.getElementById('root')
-)
-
 export default LoginControl;
