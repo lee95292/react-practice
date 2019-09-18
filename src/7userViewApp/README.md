@@ -1,4 +1,4 @@
-## LoginControl 컴포넌트
+## CH.7 Code : LoginControl 컴포넌트
 
 [post]()
 
