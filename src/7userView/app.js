@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 
 class LoginControl extends React.Component{
     constructor(props){
@@ -59,4 +59,4 @@ function LogoutButton(props){
     return ( <button onClick={props.onClick}>logout</button>)
 }
 
-export default LoginControl;
+ReactDOM.render(<LoginControl />,document.getElementById('root'));
