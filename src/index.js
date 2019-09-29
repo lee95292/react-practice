@@ -11,7 +11,7 @@ import Toggle from './6eventHandling/toggle'
 
 // ReactDOM.render(<ActionLink />, document.getElementById('root'));
 
-// ReactDOM.render(<Toggle />,document.getElementById('root'));
+ReactDOM.render(<Toggle />,document.getElementById('root'));
 
 /*
     7.User view app

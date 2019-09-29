@@ -6,12 +6,15 @@
     "jsx-loader": "^0.13.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-scripts": "^3.1.1"
   },
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
-  },
+    "build": "webpack --mode production",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+    },
   "eslintConfig": {
     "extends": "react-app"
   },
