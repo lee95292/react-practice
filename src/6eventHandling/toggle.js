@@ -1,5 +1,5 @@
-// import React from 'react';
-
+import React from 'react';
+import ReactDOM from 'react-dom'
 class Toggle extends React.Component{
     constructor(props){
         super(props);
@@ -23,4 +23,5 @@ class Toggle extends React.Component{
     }
 }
 
+export default Toggle;
 ReactDOM.render(<Toggle />,document.getElementById('root'));

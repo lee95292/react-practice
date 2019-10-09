@@ -1,5 +1,5 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom';
 function ActionLink(props){
     function handleClick(e){
         e.preventDefault();
@@ -12,4 +12,4 @@ function ActionLink(props){
 
 ReactDOM.render(<ActionLink />,document.getElementById('root'));
     
-// export default ActionLink;
+export default ActionLink;

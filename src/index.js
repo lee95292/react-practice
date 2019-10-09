@@ -9,12 +9,21 @@ import Toggle from './6eventHandling/toggle'
 */
 
 
-// ReactDOM.render(<ActionLink />, document.getElementById('root'));
-
-ReactDOM.render(<Toggle />,document.getElementById('root'));
-
-/*
-    7.User view app
-*/
-
-// ReactDOM.render(<LoginControl />,document.getElementById('root'));
+class ReturnALL extends React.Component{
+    render(){
+        return(
+            <div>
+                <p>Login Controll App</p>
+                <LoginControl />
+                <hr/>
+                <p>Action Link App</p>
+                <ActionLink />
+                <hr/>
+                <p>Toggle App</p>
+                <Toggle />
+                <hr/>
+            </div>
+        )
+    }
+}
+ReactDOM.render(<ReturnALL /> ,document.getElementById('root'));
