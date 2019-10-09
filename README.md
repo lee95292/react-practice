@@ -31,14 +31,14 @@
 **해결 : babel-preset-env 추가**
 **Webpack사용하는 경우 웹팩 **Rules > use케이스에 추가해도 된다.**
 
----
-
 ```
 // .babelrc
 {
     "presets":["@babel/preset-env","@babel/preset-react"]
 }
 ```
+
+---
 
 
 ### 나중엔 당연할 수 있지만 지금은 헷갈리는 것들
