@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LoginControl from './7userView/app';
+import LoginControl from './7userView/loginControll';
 import ActionLink from './6eventHandling/eventApp'
 import Toggle from './6eventHandling/toggle'
 
