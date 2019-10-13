@@ -5,11 +5,11 @@ import '../style/appstyle.css';
 const images = [
     {
         original:'/img/reactlogo.png',
-        sizes:'100%'
+        // sizes:'100%'
     },
     {
         original:'/img/reactlogo.png',
-        sizes:'100%'
+        // sizes:'100%'
     }
 ];
 
@@ -32,7 +32,8 @@ class MyGallery extends React.Component {
                 showFullscreenButton={this.state.showFullscreenButton} 
                 showThumbnails={this.state.showThumbnails} 
                 showPlayButton={this.state.showPlayButton} 
-                showNav={this.state.showNav}/>
+                showNav={this.state.showNav}
+                />
         </section>
 
       );
