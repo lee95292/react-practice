@@ -1,9 +1,10 @@
 # react-practice
-[\[react.js 공식 Docs\]](https://ko.reactjs.org/docs/handling-events.html) + [\[webpack\] 공식 Docs](https://webpack.js.org/guides/installation/), react native 소스코드 저장 및 문서화
+* [\[react.js 공식 Docs\]](https://ko.reactjs.org/docs/handling-events.html) + [\[webpack\] 공식 Docs](https://webpack.js.org/guides/installation/), react native 소스코드 저장 및 문서화
+* [react-training project](https://github.com/ReactTraining) 분석 및 예제 활용코드 작성
 
 ### 문서화 방법 :  
 
-1. /src/Chapter/Readme.md 에 각 학습내용 정리
+1. /src/Chapter/Readme.md 에 각 학습내용 정리 / 소스코드 분석하고 문서화
 2. 1번에 기록한 내용 익혀서 블로그에 시리즈로 내용 정리
 
 ### 개념이 잘 정리된 링크
