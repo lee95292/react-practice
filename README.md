@@ -1,7 +1,7 @@
 # react-practice
 * [\[react.js 공식 Docs\]](https://ko.reactjs.org/docs/handling-events.html) + [\[webpack\] 공식 Docs](https://webpack.js.org/guides/installation/), react native 소스코드 저장 및 문서화
 * [react-training project](https://github.com/ReactTraining) 분석 및 예제 활용코드 작성
-
+* reactjs에서 사용하는, javascript 몰랐던 문법 정리
 ## 문서화 방법 :  
 
 1. /src/Chapter/Readme.md 에 각 학습내용 정리 / 소스코드 분석하고 문서화
@@ -57,8 +57,10 @@ public/index.html에 srcipt의 경로로, main.bundle.js(상대경로 같으므�
 
 ## 나중엔 당연할 수 있지만 지금은 헷갈리는 것들
 
-* CRA 환경에서는 export default [컴포넌트명]을 해주고, index에서 import [컴포넌트명] from ['파일경로'];
 
+## javascript 문법
+
+* [export](https://beomy.tistory.com/22) 파일이나 모듈 안의 함수,객체를 외부로 참조가능하도록 함. ES6에 정의된 API
 
 ## 궁금한것 체크리스트
 
