@@ -74,3 +74,4 @@ public/index.html에 srcipt의 경로로, main.bundle.js(상대경로 같으므�
 
 - [ ] CSS를 컴포넌트에 적용하는지, 컴포넌트를 구성하는 HTML에 적용하는지 알아보기
 
+- [ ] import from xxx에서, 파일의 확장자 다 적는경우와 그렇지 않은 경우는 무언인지 (jsx 확장자를 기입하지 않았더니 module not found 뜨는 이유)
