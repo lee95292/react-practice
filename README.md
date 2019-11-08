@@ -45,7 +45,7 @@
 
 ---
 
-## E02 *bundle file이 로드되었으나 정상적으로 렌더링을 수행하지 않을 때*
+## E02 *html파일에서 bundle file이 로드되었으나 정상적으로 렌더링을 수행하지 않을 때*
 
 public/index.html, public/main.bundle.js가 존재하는 상황.  
 public/index.html에 srcipt의 경로로, main.bundle.js(상대경로 같으므로) 입력해주었는데,  
@@ -55,13 +55,22 @@ public/index.html에 srcipt의 경로로, main.bundle.js(상대경로 같으므�
 
 ---
 
+## E03 * Webpack 번들링 수행중, import 구문의 jsx파일이 not found*
+
+해결 : import Component from './path/compfile' ---> import Component from './path**compfile.jsx**;
+
+확장자를 붙여주니 인식하였다..
+
 ## 나중엔 당연할 수 있지만 지금은 헷갈리는 것들
 
 
 ## javascript 문법
 
 * [export](https://beomy.tistory.com/22) 파일이나 모듈 안의 함수,객체를 외부로 참조가능하도록 함. ES6에 정의된 API
-
+* Map
+* Arrow function
+* filter
+* sparse (...)
 ## 궁금한것 체크리스트
 
 - [ ] 가상DOM과 브라우저 DOM 연관관계와 렌더링과정 설명하는 링크 찾고 요약하기
