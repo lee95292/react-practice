@@ -55,7 +55,7 @@ public/index.html에 srcipt의 경로로, main.bundle.js(상대경로 같으므�
 
 ---
 
-## E03 * Webpack 번들링 수행중, import 구문의 jsx파일이 not found*
+## E03 *Webpack 번들링 수행중, import 구문의 jsx파일이 not found*
 
 해결 : import Component from './path/compfile' ---> import Component from './path**compfile.jsx**;
 
