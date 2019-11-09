@@ -57,9 +57,8 @@ public/index.html에 srcipt의 경로로, main.bundle.js(상대경로 같으므�
 
 ## E03 *Webpack 번들링 수행중, import 구문의 jsx파일이 not found*
 
-해결 : import Component from './path/compfile' ---> import Component from './path **compfile.jsx**;
-
-확장자를 붙여주니 인식하였다..
+**해결 : import Component from './path/compfile' ---> import Component from './path *compfile.jsx;
+확장자를 붙여주니 인식하였다..**
 
 ---
 
@@ -76,7 +75,7 @@ import {App} from '../../../../../App';  //1
 import {App} from 'AppRoot/App'          //2
 ```
 
-해결:아직못함. 
+**해결:아직못함.** 
 
 우회 - 같은 문제상황에서 resolve.alias보다[좋은 방법](https://medium.com/@khwsc1/alias-%EC%A7%80%EC%A0%95%EC%97%86%EC%9D%B4-%ED%8E%B8%ED%95%98%EA%B2%8C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0-316c31ae4738)을 알아냈다.
 
