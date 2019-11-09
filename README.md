@@ -34,7 +34,7 @@
 ```
 
 **해결 : babel-preset-env 추가**
-**Webpack사용하는 경우 웹팩 **Rules > use케이스에 추가해도 된다.**
+**Webpack사용하는 경우 웹팩 Rules > use케이스에 추가해도 된다.**
 
 ```
 // .babelrc
@@ -77,19 +77,36 @@ import {App} from 'AppRoot/App'          //2
 
 **해결:아직못함.** 
 
-우회 - 같은 문제상황에서 resolve.alias보다[좋은 방법](https://medium.com/@khwsc1/alias-%EC%A7%80%EC%A0%95%EC%97%86%EC%9D%B4-%ED%8E%B8%ED%95%98%EA%B2%8C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0-316c31ae4738)을 알아냈다.
+우회 - 같은 문제상황에서 resolve.alias보다~~[좋은 방법,webpack에서 삭제됨](https://medium.com/@khwsc1/alias-%EC%A7%80%EC%A0%95%EC%97%86%EC%9D%B4-%ED%8E%B8%ED%95%98%EA%B2%8C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0-316c31ae4738)~~ [좋은방법](https://webpack.js.org/configuration/resolve/#resolvemodules)을 알아냈다.
 
 ```javascript
-resolve: {
-    root: __dirname,     
-    modulesDirectories: [
-      'node_modules',
-      './app/components'
-    ],
+
+//...webpack...
+module.exports={
+...
+resolve:{
+        modules:[
+            'node_modules',
+            path.resolve(__dirname,'src/main/webapp/feapp/src/')
+        ]
+    },
+    
+...
+}
+
 ```
 
+```javascript
+//..in module import...
+import About from 'components/contents/about.jsx';
+//(실제경로:C:\Users\MKLee\git\Jclip-proto\src\main\webapp\feapp\src\components\contents\about.jsx)
+```
+
+
 webpack.config.js에 resolve.modulesDirectories 를 추가하고, 탐색할 디렉터리를 추가하면 된다.  
-다수 운영체제에서 사용하는 path 환경변수와 비슷한 역할을 하는듯 하다. 
+다수 운영체제에서 사용하는 path 환경변수와 비슷한 역할을 하는듯 하다.
+
+좋은 방법인지는 더 고민해보자.
 
 ---
 
@@ -106,7 +123,7 @@ webpack.config.js에 resolve.modulesDirectories 를 추가하고, 탐색할 디�
 ## 궁금한것 체크리스트
 
 - [ ] 가상DOM과 브라우저 DOM 연관관계와 렌더링과정 설명하는 링크 찾고 요약하기
-
+- [ ] path.join과 path.resolve의 차이점
 - [x] 컴포넌트에 render() 함수는 어떤 역할인지 정확하게 설명하기
 * 컴포넌트에서 구현해야 하는 유일한 메서드
 * state와 props를 활용해, **React Element, JSX, null, (Boolean,String,Number), 배열, Fragment**를 반환함
