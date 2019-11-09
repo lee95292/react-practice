@@ -10,7 +10,8 @@
 ## 개념이 잘 정리된 링크
 
 * [컴포넌트의 특성과 구성 메서드 정리](https://ko.reactjs.org/docs/react-component.html)
-* 
+* [Training React Router & Docs](https://reacttraining.com/react-router/web/guides/quick-start)
+* [velopert님의 리액트 라우터 소개](https://velopert.com/3417)
 ## Error
 
 ### E01 *. webpack.config.js의 babel-loader가 jsx를 인식하지 못할 때*
@@ -77,7 +78,7 @@ import {App} from 'AppRoot/App'          //2
 
 **해결:아직못함.** 
 
-우회 - 같은 문제상황에서 resolve.alias보다~~[좋은 방법,webpack에서 삭제됨](https://medium.com/@khwsc1/alias-%EC%A7%80%EC%A0%95%EC%97%86%EC%9D%B4-%ED%8E%B8%ED%95%98%EA%B2%8C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A5%BC-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0-316c31ae4738)~~ [좋은방법](https://webpack.js.org/configuration/resolve/#resolvemodules)을 알아냈다.
+우회 - 같은 문제상황에서 resolve.alias보다 [좋은방법](https://webpack.js.org/configuration/resolve/#resolvemodules)을 알아냈다.
 
 ```javascript
 
