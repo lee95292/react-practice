@@ -67,7 +67,7 @@ public/index.html에 srcipt의 경로로, main.bundle.js(상대경로 같으므�
 
 [Webpack github issue /resolve.alias](https://github.com/webpack/webpack/issues/4160)깃헙 이슈에  "그래서 결론은?" 기능좀 생겼으면..  same here! 류의 글에 따봉을 왜이렇게 눌러대는지,, 해결책 찾다가 포기.
 
-상황 : ES6의 import 구문에서, 지저분하고 알아보기 힘든 상대경로 대신, 절대경로 지정해주는 webpack의 resolve.alias 기능을 통해,
+상황 : import 구문에서, 지저분하고 알아보기 힘든 상대경로 대신, 절대경로 지정해주는 webpack의 resolve.alias 기능을 통해,
 
 resolve.alias:{AppRoot:path.resolve(__dirname,'path/to/comp/source')를 추가하고 빌드, Alias 사용한 import 구문에서 Module not found 
 
