@@ -12,6 +12,12 @@
 * [컴포넌트의 특성과 구성 메서드 정리](https://ko.reactjs.org/docs/react-component.html)
 * [Training React Router & Docs](https://reacttraining.com/react-router/web/guides/quick-start)
 * [velopert님의 리액트 라우터 소개](https://velopert.com/3417)
+
+### 더 공부할 내용
+
+* Redux
+* Jest 연동 및 사용법
+
 ## Error
 
 ### E01 *. webpack.config.js의 babel-loader가 jsx를 인식하지 못할 때*
