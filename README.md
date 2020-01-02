@@ -22,7 +22,7 @@
 
 ### 1. redux- Multi counter example (김종민 저 - 리액트를 다루는 기술)
 
-[](./resource/multiCounter.gif)
+![gif](./resource/multiCounter.gif)
 
 ### 더 공부할 내용
 
