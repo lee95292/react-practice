@@ -80,22 +80,27 @@ public/index.html에 srcipt의 경로로, main.bundle.js(상대경로 같으므�
 
 ---
 
-## E004 _Webpack resolve.alias 수행 시, Module not found_
 
-[Webpack github issue /resolve.alias](https://github.com/webpack/webpack/issues/4160)깃헙 이슈에 "그래서 결론은?" 기능좀 생겼으면.. same here! 류의 글에 따봉을 왜이렇게 눌러대는지,, 해결책 찾다가 포기.
 
-상황 : import 구문에서, 지저분하고 알아보기 힘든 상대경로 대신, 절대경로 지정해주는 webpack의 resolve.alias 기능을 통해,
-
-resolve.alias:{AppRoot:path.resolve(\_\_dirname,'path/to/comp/source')를 추가하고 빌드, Alias 사용한 import 구문에서 Module not found
+## E004 [상대경로 => 절대경로 문제] 
 
 ```javascript
 import { App } from "../../../../../App"; //1
 import { App } from "AppRoot/App"; //2
 ```
 
-**해결:아직못함.**
+*컴포넌트  구조가 깊어질수록 상대경로가 지저분해지는 문제에 대해서 세 가지의 방법(두가지 사용가능) 을 찾아봤다.*
 
-우회 - 같은 문제상황에서 resolve.alias보다 [좋은방법](https://webpack.js.org/configuration/resolve/#resolvemodules)을 알아냈다.
+* 1._Webpack resolve.alias 수행 시, Module not found_ : **Deprecated**
+
+[Webpack github issue /resolve.alias](https://github.com/webpack/webpack/issues/4160)깃헙 이슈 정리좀 해줬으면 좋겠다. 거의 Stackoverflow급... 질문답변 퍼레이드
+
+상황 : import 구문에서, 지저분하고 알아보기 힘든 상대경로 대신, 절대경로 지정해주는 webpack의 resolve.alias 기능을 통해,
+
+resolve.alias:{AppRoot:path.resolve(\_\_dirname,'path/to/comp/source')를 추가하고 빌드, Alias 사용한 import 구문에서 Module not found
+
+
+* **2.같은 문제상황에서 resolve.alias보다 [좋은방법](https://webpack.js.org/configuration/resolve/#resolvemodules)을 알아냈다.**
 
 ```javascript
 
@@ -124,6 +129,19 @@ webpack.config.js에 resolve.modulesDirectories 를 추가하고, 탐색할 디�
 다수 운영체제에서 사용하는 path 환경변수와 비슷한 역할을 하는듯 하다.
 
 좋은 방법인지는 더 고민해보자.
+
+* **3. 시작 스크립트에 NODE_PATH(환경변수) 사용     | 출처 : 김종민 저 -리액트를 다루는 기술 P.364**
+
+```javascript
+//unix계열, CRA의 package.json에서
+"start : "NODE_PATH=src react-script-start"
+"build : "NODE_PATH=src react-script-build"
+
+//windows, CRA의 package.json에서  npm install cross-env
+"start : "cross-env NODE_PATH=src react-script-start"
+"build : "cross-env NODE_PATH=src react-script-build"
+```
+
 
 ---
 
