@@ -1,6 +1,5 @@
-@import "./utils.css";
-
-body {
-  background: $oc-gray-1;
-  margin: 0px;
+.todo-list {
+  background-color: blue;
+  border: 3px solid;
+  color: red;
 }

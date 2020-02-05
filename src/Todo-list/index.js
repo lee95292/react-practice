@@ -1,13 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./styles/main.css";
+import styles from "./styles/main.css";
 import App from "./component/App";
+import classNames from "classnames/bind";
 
+const cx = classNames.bind(styles);
 export default class TodoList extends React.Component {
   render() {
     return (
-      <div>
-        <App></App>
+      <div classNames={cx("todo-list")}>
+        <App />
       </div>
     );
   }

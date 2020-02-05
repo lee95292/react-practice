@@ -1,0 +1,43 @@
+@import url("/src/style/utils.css");
+.todo-input {
+  border-top: 1px solid var(--oc-gray-5);
+  border-bottom: 1px solid var(--oc-gray-2);
+  display: flex;
+  padding: 1rem;
+}
+
+.todo-input input {
+  flex: 1;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+.todo-input input:focus {
+  border-bottom: 1px solid var(--oc-cyan-6);
+}
+
+.add-button {
+  width: 5rem;
+  height: 2rem;
+  margin-left: 1rem;
+  border: 1px solid var(--oc-grean-7);
+  color: var(--oc-green-7);
+  font-weight: 500;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: var(--oc-green-7);
+  color: white;
+}
+
+.add-button:active {
+  background-color: var(--oc-gray-8);
+}
