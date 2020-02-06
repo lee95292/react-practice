@@ -1,0 +1,44 @@
+@import "/src/style/utils.css";
+
+.todo-item {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.todo-item .tick {
+  margin-right: 1rem;
+}
+
+.todo-item .text {
+  flex: 1;
+  word-break: break-all;
+}
+
+.todo-item .done {
+  text-decoration: line-through;
+}
+
+.todo-item .delete {
+  margin-left: 1rem;
+  color: var(--oc-red-7);
+  font-size: 0.8rem;
+}
+
+.delete:hover {
+  color: var(--oc-red-7);
+  text-decoration: underline;
+}
+
+.todo-item:nth-child(odd) {
+  background-color: var(--oc-gray-0);
+}
+
+.todo-item:hover {
+  background-color: var(--oc-gray-1);
+}
+
+.todo-item + .todo-item {
+  border-top: 1px solid var(--oc-gray-3);
+}

@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 export default class TodoList extends React.Component {
   render() {
     return (
-      <div classNames={cx("todo-list")}>
+      <div className={cx("todo-list")}>
         <App />
       </div>
     );

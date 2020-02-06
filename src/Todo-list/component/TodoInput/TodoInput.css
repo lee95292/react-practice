@@ -32,6 +32,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background-color: var(--oc-green-2);
 }
 
 .add-button:hover {

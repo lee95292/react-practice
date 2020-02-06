@@ -6,12 +6,9 @@ import TodoList from "./TodoList";
 export default class App extends Component {
   state = {
     input: "",
-    todos: [
-      { id: 0, text: "aa", done: true },
-      { id: 1, text: "aa", done: true }
-    ]
+    todos: []
   };
-  id = 1;
+  id = 0;
   getId = () => {
     return ++this.id;
   };
@@ -24,6 +21,10 @@ export default class App extends Component {
   };
   handleInsert = () => {
     const { todos, input } = this.state;
+    if (input.length === 0) {
+      alert("일정을 입력해주세요");
+      return;
+    }
     const newTodo = {
       text: input,
       done: false,
@@ -33,8 +34,6 @@ export default class App extends Component {
       input: "",
       todos: [...todos, newTodo]
     });
-    console.log("insert");
-    console.log(newTodo);
   };
 
   handleToggle = id => {
@@ -52,7 +51,13 @@ export default class App extends Component {
       ]
     });
   };
-  handleRemove = id => {};
+  handleRemove = id => {
+    const { todos } = this.state;
+    const index = todos.findIndex(todo => todo.id === id);
+    this.setState({
+      todos: [...todos.slice(0, index), ...todos.slice(index + 1, todos.length)]
+    });
+  };
   render() {
     const { input, todos } = this.state;
     const { handleChange, handleInsert, handleToggle, handleRemove } = this;
@@ -63,9 +68,12 @@ export default class App extends Component {
           onChange={handleChange}
           value={input}
           onInsert={handleInsert}
+        />
+        <TodoList
+          todos={todos}
+          onToggle={handleToggle}
           onRemove={handleRemove}
         />
-        <TodoList todos={todos} onToggle={handleToggle} />
       </PageTemplate>
     );
   }
