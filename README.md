@@ -4,7 +4,7 @@
 - [react-training project](https://github.com/ReactTraining) 분석 및 예제 활용코드 작성
 - reactjs에서 사용하는, javascript 몰랐던 문법 정리
 - [리액트를 다루는 기술](https://book.naver.com/bookdb/book_detail.nhn?bid=15372757)공부한것 정리
-
+ 
 ## 학습 방법 :
 
 1. [Reference](#References)학습하기
