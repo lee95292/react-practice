@@ -1,5 +1,5 @@
 # References
- 
+  
 - [\[react.js 공식 Docs\]](https://ko.reactjs.org/docs/handling-events.html) + [\[webpack\] 공식 Docs](https://webpack.js.org/guides/installation/), react native 소스코드 저장 및 문서화
 - [react-training project](https://github.com/ReactTraining) 분석 및 예제 활용코드 작성
 - reactjs에서 사용하는, javascript 몰랐던 문법 정리
