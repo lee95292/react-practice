@@ -168,6 +168,4 @@ webpack.config.js에 resolve.modulesDirectories 를 추가하고, 탐색할 디�
 * 반환된 결과를 통해 렌더링을 수행합니다.
 * [React Docs: render()](https://ko.reactjs.org/docs/react-component.html#render)
 
-- [ ] CSS를 컴포넌트에 적용하는지, 컴포넌트를 구성하는 HTML에 적용하는지 알아보기
-
 - [ ] import from xxx에서, 파일의 확장자 다 적는경우와 그렇지 않은 경우는 무언인지 (jsx 확장자를 기입하지 않았더니 module not found 뜨는 이유)
