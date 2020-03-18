@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/react-transition-group": "^4.2.3",
+    "axios": "^0.19.2",
     "classnames": "^2.2.6",
     "jquery": "^3.4.1",
     "jsx-loader": "^0.13.2",
