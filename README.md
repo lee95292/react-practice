@@ -160,7 +160,7 @@ webpack.config.js에 resolve.modulesDirectories 를 추가하고, 탐색할 디�
 ## 궁금한것 체크리스트
 
 - [ ] 가상DOM과 브라우저 DOM 연관관계와 렌더링과정 설명하는 링크 찾고 요약하기
-- [ ] path.join과 path.resolve의 차이점
+- [x] path.join과 path.resolve의 차이점
 - [x] 컴포넌트에 render() 함수는 어떤 역할인지 정확하게 설명하기
 
 * 컴포넌트에서 구현해야 하는 유일한 메서드
